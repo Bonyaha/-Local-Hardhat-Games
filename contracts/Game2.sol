@@ -17,7 +17,7 @@ contract Game2 {
 
   function win() public {
     require(x > 0 && y > 0);
-    require(x + y == 50);
+    require(x + y == 50,'Not equal 50, MTF!');
     emit Winner(msg.sender);
   }
 }
