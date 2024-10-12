@@ -5,7 +5,8 @@ async function main() {
   const Game = await hre.ethers.getContractFactory(contractName);
   // if you need to add constructor arguments for the particular game, add them here:
   const game = await Game.deploy();
-  console.log(`${contractName} deployed to address: ${game.address}`);
+    
+  console.log(`${contractName} deployed to address: ${game.target}`);
 }
 
 main()
